@@ -81,3 +81,49 @@ nav {
 .secondary { border: 1px solid var(--sage); color: var(--sage); }
 
 footer { text-align: center; padding: 3rem; background: var(--beige); font-size: 0.8rem; }
+
+/* Interests Section */
+.interests-section {
+    padding: 5rem 10%;
+    background-color: var(--white);
+    text-align: center;
+}
+
+.interests-section h2 {
+    margin-bottom: 3rem;
+}
+
+.interests-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.interest-card {
+    padding: 2.5rem;
+    background-color: var(--beige);
+    border-radius: 40px; /* Soft organic corners */
+    transition: transform 0.3s ease;
+}
+
+.interest-card:hover {
+    transform: translateY(-10px);
+    background-color: #edeae2;
+}
+
+.interest-card .icon {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.interest-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: var(--sage);
+}
+
+.interest-card p {
+    font-size: 0.95rem;
+    color: var(--dark-text);
+}
